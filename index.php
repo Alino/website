@@ -1,13 +1,15 @@
 <?php
-  //require "_connect.php";
-  include "_functions.php"; 
+  include "languages.php"; 
 ?>
-<!DOCTYPE html>
-<html lang="pl">
+<html lang="<?php echo $lang['SITE_LANG']; ?>" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:fb="http://ogp.me/ns/fb#">
 <head>
   <title><?php echo $lang['TITLE']; ?></title>  
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <meta property="og:image" content="img/company_og_<?php echo $lang['SITE_LANG'];?>.png" />
   
   <link href="https://fonts.googleapis.com/css?family=Metamorphous" rel="stylesheet"> 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -18,46 +20,59 @@
   <link rel="stylesheet" href="css/lightbox.css" />   
 
   <link rel="shortcut icon" href="img/favicon.ico" /> 
-                                                  
+
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="js/jquery.scrollme.js"></script>
+
   <script src="js/parallax.js"></script>
   <script src="js/stickymenu.js"></script>
   <script src="js/scroll.js"></script>
   <script src="js/modernizr.custom.js"></script>  
 </head>  
+
 <script>
 	$(window).load(function() {
 		$(".se-pre-con").fadeOut("slow");;
 	});
 </script> 
-<body>   
+
+<body>
+	<?php include_once("google_analytics.php") ?>
+
   <div class="se-pre-con">
     <div class="loading"><i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i></div>
   </div>
   <a id="top" class="anchor magnetic"></a>
   <div class="top" data-parallax="scroll" data-image-src="img/bg.jpg"> 
-    <div class="bar-top"><?php echo $lang['HELLO']; ?> | www.dzieje-khorinis.pl <span class="fr">kontakt@dzieje-khorinis.pl</span></div>
-    <div class="social-bar">
-      <!-- <a href="#" target="_blank"><img src="img/footer/twitter.png"></a> -->
+    <div class="bar-top"><?php echo $lang['HELLO']; ?> | <?php echo $lang['SITE_URL']; ?> <span class="fr"><?php echo $lang['SITE_EMAIL']; ?></span></div>
+    <div class="social-bar">  
       <a href="https://www.facebook.com/dziejekhorinis/" target="_blank"><img src="img/footer/facebook.png"></a>
+	  
+	   <?php 
+		if ($lang_file == 'russian.php') {
+			 ?><a href="http://vk.com/gothic2_historyofkhorinis" target="_blank"><img src="img/footer/vk.png"></a><?php 
+		}		  
+	   ?>
+	  
       <a href="https://www.youtube.com/c/dziejekhorinismod" target="_blank"><img src="img/footer/youtube.png"></a>
       <a href="http://www.moddb.com/mods/the-history-of-khorinis" target="_blank"><img src="img/footer/moddb.png"></a>
-      <img src="img/logo-menu.png" class="logo-top">
+	  <a href="https://discordapp.com/invite/ySDMRhM" target="_blank"><img src="img/footer/discord.png"></a>
     </div>
+	
     <div class="lang-bar">
-      <a href="/?lang=pl"><img src="img/lang/pl.jpg"></a>
-      <a href="/?lang=en"><img src="img/lang/gb.jpg"></a>
-      <!-- <a href="/?lang=en"><img src="img/lang/ru.jpg"></a> -->
+      <a href="http://dzieje-khorinis.pl"><img src="img/lang/pl.jpg"></a>
+      <a href="http://thehistoryofkhorinis.com/?lang=en"><img src="img/lang/gb.jpg"></a>
+      <a href="http://thehistoryofkhorinis.com/?lang=ru"><img src="img/lang/ru.jpg"></a>
     </div>
+	
     <div class="top-container scrollme">
       <img src="img/<?php echo $lang['LOGO']; ?>" id="logo">
-      <p><?php echo $lang['INFO']; ?></p>
+      <p><?php echo $lang['INFO']; ?></p>	  
     </div>    
   </div>
          
   <script>
-jQuery(document).ready(function(){
+	jQuery(document).ready(function(){
         jQuery('#hideshow').on('click', function(event) {        
              jQuery('#hide').toggle('hide');
         });
@@ -73,15 +88,16 @@ jQuery(document).ready(function(){
         <li><a href="#features"><?php echo $lang['FEATURES_T']; ?></a></li>
         <li><a href="#story"><?php echo $lang['STORY_T']; ?></a></li>
         <li><a href="#team"><?php echo $lang['TEAM_T']; ?></a></li>
-        <li><a href="#calendar"><?php echo $lang['CALENDAR_T']; ?></a></li>
         <li><a href="#gallery"><?php echo $lang['GALLERY_T']; ?></a></li>
-        <li><a href="#download">Download</a></li>
+        <li><a href="#download"> <?php echo $lang['DOWNLOAD_T'] ?></a></li>
+        <li><a href="https://forum.soulfire.com.pl" target = "_blank"> <?php echo $lang['FORUM'] ?></a></li>
         </div>
       </ul>
     </nav>
   </div>      
   
   <div class="container" id="to">
+  
     <a id="intro" class="anchor"></a>
     <div>
       <img src="img/knights.png" align="left" class="scrollme animateme"
@@ -92,7 +108,7 @@ jQuery(document).ready(function(){
 				data-opacity="0"
 				data-scale="1.2">
       <h1><i class="fa fa-fire" aria-hidden="true"></i> <?php echo $lang['INTRO_T']; ?></h1>
-      <p><?php echo $lang['INTRO']; ?></p>
+      <p  class="wer"><?php echo $lang['INTRO']; ?></p>
     </div>   
     
     <hr class="style1">
@@ -108,7 +124,7 @@ jQuery(document).ready(function(){
 				data-opacity="0"
 				data-scale="1.5">
       <ul>
-        <li class="dkali"><b><span>+</span> <?php echo $lang['FEATURES_1'] ?></b></li>
+        <li class="dkali"><b><span>+</span> <?php echo $lang['FEATURES_1'] ?></b></li>      
         <li><span>+</span> <?php echo $lang['FEATURES_2'] ?></li>
         <li><span>+</span> <?php echo $lang['FEATURES_3'] ?></li>
         <li><span>+</span> <?php echo $lang['FEATURES_4'] ?></li>
@@ -120,39 +136,63 @@ jQuery(document).ready(function(){
         <li><span>+</span> <?php echo $lang['FEATURES_10'] ?></li>
         <li><span>+</span> <?php echo $lang['FEATURES_11'] ?></li>
         <li><span>+</span> <?php echo $lang['FEATURES_12'] ?></li>
-        <li><span>+</span> <?php echo $lang['FEATURES_13'] ?></li>
-        <li><span>+</span> <?php echo $lang['FEATURES_14'] ?></li>
-        <li><span>+</span> <?php echo $lang['FEATURES_15'] ?></li>
-        <li><span>+</span> <?php echo $lang['FEATURES_16'] ?></li>
-        <li><span>+</span> <?php echo $lang['FEATURES_17'] ?></li>
-        <li><span>+</span> <?php echo $lang['FEATURES_18'] ?></li>
-        <li><span>+</span> <?php echo $lang['FEATURES_19'] ?></li>
+        <li><span>+</span> <?php echo $lang['FEATURES_13'] ?></li>  
       </ul>
     </div>     
     
     <hr class="style1">
   
-    <a id="story" class="anchor"></a>
-    <div>
-      <h1><i class="fa fa-book" aria-hidden="true"></i> <?php echo $lang['STORY_T']; ?></h1>
-      <p><?php echo $lang['STORY_1']; ?></p>
-      <p class="wer"><?php echo $lang['STORY_2']; ?></p>
-      <p class="wer"><?php echo $lang['STORY_3']; ?></p>
-      <p class="wer"><?php echo $lang['STORY_4']; ?></p>
-      <p class="wer"><?php echo $lang['STORY_5']; ?></p>
-      <p class="wer"><?php echo $lang['STORY_6']; ?></p>
-      <p class="wer"><?php echo $lang['STORY_7']; ?></p>
-      <p class="wer"><?php echo $lang['STORY_8']; ?></p>
-      <p class="wer"><?php echo $lang['STORY_9']; ?></p>
+	<a id="story" class="anchor"></a>
+	<div>
+     <h1><i class="fa fa-book" aria-hidden="true"></i> <?php echo $lang['STORY_T']; ?></h1>
+		
+	<div class="slideshow-container" style = "margin: 0;">
+		<div class="mySlides fade" style = "margin: 0;">		
+		  <p class="wer"><?php echo $lang['STORY_1']; ?></p>		
+		</div>
+
+		<div class="mySlides fade" style = "margin: 0;">	 
+		  <p class="wer"><?php echo $lang['STORY_2']; ?></p>
+		  <p class="wer"><?php echo $lang['STORY_3']; ?></p>		  
+		</div>
+
+		<div class="mySlides fade" style = "margin: 0;">		 
+		  <p class="wer"><?php echo $lang['STORY_4']; ?></p>	
+		  <p class="wer"><?php echo $lang['STORY_5']; ?></p>		  
+		</div>
+		
+		<div class="mySlides fade" style = "margin: 0;">		 
+		  <p class="wer"><?php echo $lang['STORY_6']; ?></p>	  
+		  <p class="wer"><?php echo $lang['STORY_7']; ?></p>	  
+		</div>
+		
+		<div class="mySlides fade" style = "margin: 0;">		 
+		  <p class="wer"><?php echo $lang['STORY_8']; ?></p>
+		  <p class="wer"><?php echo $lang['STORY_9']; ?></p>  			  
+		</div>
+	</div>
+	
+	<br>
+
+	<div style="margin: 0; text-align:center">
+	  <span class="dot" onclick="currentSlide(1)"></span> 
+	  <span class="dot" onclick="currentSlide(2)"></span> 
+	  <span class="dot" onclick="currentSlide(3)"></span> 
+	  <span class="dot" onclick="currentSlide(4)"></span> 
+	  <span class="dot" onclick="currentSlide(5)"></span> 
+	</div>
+
+	<br>
+	
     </div>
   
     <div class="mt40 list scrollme animateme"
-				data-when="enter"
-				data-from="0.5"
-				data-to="0"
-				data-crop="true"
-				data-opacity="0"
-				data-scale="1.2">
+		data-when="enter"
+		data-from="0.5"
+		data-to="0"
+		data-crop="false"
+		data-opacity="0"
+		data-scale="1.2">
       <h2><i class="fa fa-map" aria-hidden="true"></i> <?php echo $lang['STORY_LIST_T']; ?>:</h2>
       <ul>
         <li><span>+</span> <?php echo $lang['STORY_LIST_1']; ?></li>
@@ -169,167 +209,176 @@ jQuery(document).ready(function(){
     <a id="team" class="anchor"></a>
     <div class="mb40">
       <h1><?php echo $lang['TEAM_T']; ?></h1>
-      <img src="img/team.jpg" align="left" class="mr40 mb20 scrollme animateme"
-				data-when="exit"
-				data-from="0.5"
-				data-to="0"
-				data-crop="true"
-				data-opacity="0"
-				data-scale="1.5">
-      <p><?php echo $lang['TEAM']; ?></p>
       
+	  <div class="slideshow-container" style = "margin: 0;">
+		<div class="mySlides1 fade1" style = "margin: 0;">		
+		   <p class="wer"><?php echo $lang['TEAM_1']; ?></p>
+		</div>
+
+		<div class="mySlides1 fade1" style = "margin: 0;">	 
+		   <p class="wer"><?php echo $lang['TEAM_2']; ?></p>
+		</div>	
+	</div>
+	
+	<br>
+
+	<div style="margin: 0; text-align:center">
+	  <span class="dot1" onclick="currentSlide1(1)"></span> 
+	  <span class="dot1" onclick="currentSlide1(2)"></span> 
+	</div>
+	    
       <hr class="style2">
   
-      <div class="list2 animateme scrollme"
-	data-when="enter"
-	data-from="0.75"
-	data-to="0"
-	data-opacity="0"
-	data-translatex="200">
+      <div class="list2 scrollme animateme"
+		data-when="enter"
+		data-from="0.5"
+		data-to="0"
+		data-crop="false"
+		data-opacity="0"
+		data-scale="1.2">
         <h2><?php echo $lang['TEAM_REC_T']; ?></h2>
         <?php echo $lang['TEAM_REC_1']; ?>
         <p class="wer"><?php echo $lang['TEAM_REC_2']; ?>
         <p class="wer"><?php echo $lang['TEAM_REC_3']; ?></p>
+        <p class="wer"><?php echo $lang['TEAM_REC_4']; ?></p>
       </div>
     </div>
   </div>
 
-  <div class="container sword">      
-    <a id="calendar" class="anchor"></a>
-    <div>      
-      <h1 class="smaller2"><i class="fa fa-calendar" aria-hidden="true"></i> <?php echo $lang['CALENDAR_T'] ?>*</h1>
-
-      <table class="table-kal">
-        <tr class="animateme scrollme"
-	data-when="enter"
-	data-from="0.75"
-	data-to="0"
-	data-opacity="0"
-	data-translatex="200">
-          <td><b><h2 class="smaller"><?php echo $lang['CALENDAR_T_L'] ?></h2></b></td>   
-          <td><b><h2 class="smaller"><?php echo $lang['CALENDAR_T_R'] ?></h2></b></td>
-        </tr>
-        <tr class="animateme scrollme"
-	data-when="enter"
-	data-from="0.75"
-	data-to="0"
-	data-opacity="0"
-	data-translatex="200">
-          <td><?php echo $lang['CALENDAR_L_1'] ?></td>   
-          <td><?php echo $lang['CALENDAR_R_1'] ?></td>
-        </tr>
-        <tr class="animateme scrollme"
-	data-when="enter"
-	data-from="0.75"
-	data-to="0"
-	data-opacity="0"
-	data-translatex="200">
-          <td><?php echo $lang['CALENDAR_L_2'] ?></td>   
-          <td><?php echo $lang['CALENDAR_R_2'] ?></td>
-        </tr>
-        <tr class="animateme scrollme"
-	data-when="enter"
-	data-from="0.75"
-	data-to="0"
-	data-opacity="0"
-	data-translatex="200">
-          <td><?php echo $lang['CALENDAR_L_3'] ?></td>   
-          <td><?php echo $lang['CALENDAR_R_3'] ?></td>
-        </tr>
-        <tr class="dka animateme scrollme"
-	data-when="enter"
-	data-from="0.75"
-	data-to="0"
-	data-opacity="0"
-	data-translatex="200">
-          <td><i class="fa fa-check mr5" aria-hidden="true"></i> <?php echo $lang['CALENDAR_L_4'] ?></td>   
-          <td><?php echo $lang['CALENDAR_R_4'] ?></td>
-        </tr>
-        <tr class="animateme scrollme"
-	data-when="enter"
-	data-from="0.75"
-	data-to="0"
-	data-opacity="0"
-	data-translatex="200">
-          <td><?php echo $lang['CALENDAR_L_5'] ?></td>   
-          <td><?php echo $lang['CALENDAR_R_5'] ?></td>
-        </tr>
-        <tr class="animateme scrollme"
-	data-when="enter"
-	data-from="0.75"
-	data-to="0"
-	data-opacity="0"
-	data-translatex="200">
-          <td><?php echo $lang['CALENDAR_L_6'] ?></td>   
-          <td><?php echo $lang['CALENDAR_R_6'] ?></td>
-        </tr>
-        <tr class="animateme scrollme"
-	data-when="enter"
-	data-from="0.75"
-	data-to="0"
-	data-opacity="0"
-	data-translatex="200">
-          <td><?php echo $lang['CALENDAR_L_7'] ?></td>   
-          <td><?php echo $lang['CALENDAR_R_7'] ?></td>
-        </tr>
-        <tr class="animateme scrollme"
-	data-when="enter"
-	data-from="0.75"
-	data-to="0"
-	data-opacity="0"
-	data-translatex="200">
-          <td><?php echo $lang['CALENDAR_L_8'] ?></td>   
-          <td><?php echo $lang['CALENDAR_R_8'] ?></td>
-        </tr>
-      </table>
-      <p class="wer fsi">* <?php echo $lang['CALENDAR_I'] ?></p>
-    </div>
-
-    <hr class="style1">
-  </div> 
   <a id="gallery" class="anchor"></a>
   <div>
-    <a class="gallery" href="img/screens/1.jpg" style="background-image: url(img/screens/1.jpg);" data-lightbox="gallery"></a>
+	<iframe class="gallery" src="https://www.youtube.com/embed/jarXyWleCDc" frameborder="0" allowfullscreen></iframe>
+	<iframe class="gallery" src="https://www.youtube.com/embed/vnoVmUTamXM" frameborder="0" allowfullscreen></iframe>	
+    <iframe class="gallery" src="https://www.youtube.com/embed/SS_RRuNCe6Y" frameborder="0" allowfullscreen></iframe>
+    <iframe class="gallery" src="https://www.youtube.com/embed/O9-r6dbUpfQ" frameborder="0" allowfullscreen></iframe>
+	
+	<a class="gallery" href="img/screens/1.jpg" style="background-image: url(img/screens/1.jpg);" data-lightbox="gallery"></a>
     <a class="gallery" href="img/screens/2.jpg" style="background-image: url(img/screens/2.jpg);" data-lightbox="gallery"></a>
     <a class="gallery" href="img/screens/3.jpg" style="background-image: url(img/screens/3.jpg);" data-lightbox="gallery"></a>
     <a class="gallery" href="img/screens/4.jpg" style="background-image: url(img/screens/4.jpg);" data-lightbox="gallery"></a>
     <a class="gallery" href="img/screens/5.jpg" style="background-image: url(img/screens/5.jpg);" data-lightbox="gallery"></a>
     <a class="gallery" href="img/screens/6.jpg" style="background-image: url(img/screens/6.jpg);" data-lightbox="gallery"></a>
     <a class="gallery" href="img/screens/7.jpg" style="background-image: url(img/screens/7.jpg);" data-lightbox="gallery"></a>
-    <a class="gallery" href="img/screens/8.jpg" style="background-image: url(img/screens/8.jpg);" data-lightbox="gallery"></a>
-    
-    <iframe class="gallery" src="https://www.youtube.com/embed/O9-r6dbUpfQ" frameborder="0" allowfullscreen></iframe>
-    <iframe class="gallery" src="https://www.youtube.com/embed/ZAo2kCCU7oQ" frameborder="0" allowfullscreen></iframe>
-    <iframe class="gallery" src="https://www.youtube.com/embed/jarXyWleCDc" frameborder="0" allowfullscreen></iframe>
-    <iframe class="gallery" src="https://www.youtube.com/embed/vnoVmUTamXM" frameborder="0" allowfullscreen></iframe>
+    <a class="gallery" href="img/screens/8.jpg" style="background-image: url(img/screens/8.jpg);" data-lightbox="gallery"></a>		
   </div>
   <div class="third">
     <a id="download" class="anchor"></a>
-    <div class="animateme scrollme"
-	data-when="span"
-	data-from="0.75"
-	data-to="0"
-	data-opacity="0"
-	data-translatex="200">
-      <h1><i class="fa fa-download" aria-hidden="true"></i> Download</h1>
+    <div>
+      <h1><i class="fa fa-download" aria-hidden="true"></i> <?php echo $lang['DOWNLOAD_T'] ?></h1>
       <p class="wer mb20 fwb"><?php echo $lang['DOWNLOAD'] ?></p>
-      <p class="fsi">"Produkcja jest w stanie składania wszystkiego w całość – przekuwamy skrypty na język gry, wstawiając postacie do ukończonego już świata i dodając od razu na tym samym etapie na bieżąco dubbing. Nie rzucam tu datami bo nie wiadomo na razie czy zajmie im to dwa miesiące, czy osiem. Są pewne dane szacunkowe, ale też kilka rzeczy których oszacować się nie da. Chłopaki to w każdym razie profesjonaliści i wiem, że złożą wszystko w całość, najszybciej jak tylko mogą."</p>
+      <p class="wer"><?php echo $lang['RELEASE_DATE'] ?></p>  
     </div>
   </div>
 
-  <footer>
+  <footer>	
+  <center>
+	<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+	<style type="text/css">
+		#mc_embed_signup {background: #111111; clear: left; font: 14px Helvetica,Arial,sans-serif; width: 90%; }
+		#mc_embed_signup .button {background: #2E2E2E;}		
+	</style>
+
+	<div id="mc_embed_signup">
+		<form action= "<?php echo $lang['NEWSLETTER_URL'] ?>"  method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+			<div id="mc_embed_signup_scroll">
+			<label for="mce-EMAIL"> <?php echo $lang['NEWSLETTER_TEXT'] ?> </label>
+			<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="<?php echo $lang['NEWSLETTER_EMAIL'] ?>" required>		
+			<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="<?php echo $lang['NEWSLETTER_EMAIL'] ?>" tabindex="-1" value=""></div>
+			<div class="clear"><input type="submit" value="<?php echo $lang['NEWSLETTER_BUTTON'] ?>" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+			</div>
+		</form>
+	</div>
+	
+	</center>
+	</br>
+	
     <div>
       <!-- <a href="#" target="_blank"><img src="img/footer/twitter.png"></a> -->
       <a href="https://www.facebook.com/dziejekhorinis/" target="_blank"><img src="img/footer/facebook.png"></a>
+	  
+	   <?php 
+		switch ($lang_file) 
+		{
+			case 'russian.php':
+			 ?><a href="http://vk.com/gothic2_historyofkhorinis" target="_blank"><img src="img/footer/vk.png"></a> <?php 
+			break;
+		}	  
+	  ?>
+	  
       <a href="https://www.youtube.com/c/dziejekhorinismod" target="_blank"><img src="img/footer/youtube.png"></a>
       <a href="http://www.moddb.com/mods/the-history-of-khorinis" target="_blank"><img src="img/footer/moddb.png"></a>
+	  <a href="https://discordapp.com/invite/ySDMRhM" target="_blank"><img src="img/footer/discord.png"></a>
+	   	  	  
     </div>
+	
+	<a href = "https://www.dropbox.com/sh/ob5ax4k1a9ygg5t/AAAanAujZDHjmH6QwyOiSh80a?dl=0"> <font color = "green"> <?php echo $lang['PRESS_PACK']; ?> </font> </a>
+	
+	</br> </br>
+	
     <img src="img/logo.png" class="logo">
     Copyright 2017 © SoulFire. All rights reserved <br>
     <span class="small">Design & Code: <a href="https://myxoske.pl" target="_blank">myxoske.pl</a></span>
+	
   </footer>       
   <a href="#top" class="scrolltop"><i class="fa fa-arrow-up" aria-hidden="true"></i> <?php echo $lang['TOP']; ?></a>  
   <script src="js/lightbox.js"></script> 
   <script src="js/jquery.dlmenu.js"></script>
+ 
+	<script>
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");
+		  var dots = document.getElementsByClassName("dot");
+		  if (n > slides.length) {slideIndex = 1}    
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+			  slides[i].style.display = "none";  
+		  }
+		  for (i = 0; i < dots.length; i++) {
+			  dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";  
+		  dots[slideIndex-1].className += " active";
+		}
+
+		var slideIndex1 = 1;
+		showSlides1(slideIndex1);	
+		  		  
+		function plusSlides1(n) {
+		  showSlides1(slideIndex1 += n);
+		}
+
+		function currentSlide1(n) {
+		  showSlides1(slideIndex1 = n);
+		}
+
+		function showSlides1(n) {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides1");
+		  var dots = document.getElementsByClassName("dot1");
+		  if (n > slides.length) {slideIndex1 = 1}    
+		  if (n < 1) {slideIndex1 = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+			  slides[i].style.display = "none";  
+		  }
+		  for (i = 0; i < dots.length; i++) {
+			  dots[i].className = dots[i].className.replace(" active1", "");
+		  }
+		  slides[slideIndex1-1].style.display = "block";  
+		  dots[slideIndex1-1].className += " active1";
+		}
+	</script>
 </body>
+
 </html>

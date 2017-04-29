@@ -1,15 +1,18 @@
 @media screen and (max-width: 400px)
 {
+
 .container .list,
 .list2
 {
   padding: 10px !important;
 }
 }
+
 @media screen and (max-width: 600px)
 {
-
+	
 }
+
 @media screen and (max-width: 700px)
 {
   .fr
@@ -37,10 +40,12 @@
   height: 100px !important;
 }
 }
+
 @media screen and (min-width: 1024px)
 {
 
 }
+
 @media screen and (max-width: 1024px)
 {
  .sword
@@ -56,8 +61,7 @@
     max-width: 86% !important;
     padding: 10px 7% 50px 7% !important;
   }
-  
-  
+    
 .menu p
 {
   display: table;
@@ -99,9 +103,6 @@
   background:  #E6CFA0;
   color: #111111;
 }
-
-
-
 
 .container div,
 .second div,
@@ -193,10 +194,12 @@
   margin: 20px 0 0 5%;
 }
 }
+
 @media screen and (max-width: 1280px)
 {
 
 }
+
 @media screen and (max-width: 1366px)
 {
 .top
@@ -213,7 +216,8 @@
 
   }
 }
+
 @media screen and (max-width: 1440px)
 {
-
+	 
 }
