@@ -9,6 +9,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
+  <meta name="title" content= "<?php echo $lang['TITLE'];?>">
+  <meta name="description" content= "<?php echo $lang['INFO'];?>">
+  
+  <meta name="keywords" content= "dzieje khorinis the history of khorinis soulfire" />
+  
   <meta property="og:image" content="img/company_og_<?php echo $lang['SITE_LANG'];?>.png" />
   
   <link href="https://fonts.googleapis.com/css?family=Metamorphous" rel="stylesheet"> 
@@ -37,7 +42,7 @@
 </script> 
 
 <body>
-	<?php include_once("google_analytics.php") ?>
+   <?php include_once("google_analytics.php") ?>
 
   <div class="se-pre-con">
     <div class="loading"><i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i></div>
@@ -46,23 +51,23 @@
   <div class="top" data-parallax="scroll" data-image-src="img/bg.jpg"> 
     <div class="bar-top"><?php echo $lang['HELLO']; ?> | <?php echo $lang['SITE_URL']; ?> <span class="fr"><?php echo $lang['SITE_EMAIL']; ?></span></div>
     <div class="social-bar">  
-      <a href="https://www.facebook.com/dziejekhorinis/" target="_blank"><img src="img/footer/facebook.png"></a>
+      <a href="https://www.facebook.com/dziejekhorinis/" target="_blank" onClick="ga('send', 'event', 'socialmedia', 'facebook', '<?php echo $lang['SITE_LANG']; ?>');"><img src="img/footer/facebook.png"></a>
 	  
 	   <?php 
 		if ($lang_file == 'russian.php') {
-			 ?><a href="http://vk.com/gothic2_historyofkhorinis" target="_blank"><img src="img/footer/vk.png"></a><?php 
+			 ?><a href="http://vk.com/gothic2_historyofkhorinis" target="_blank" onClick="ga('send', 'event', 'socialmedia', 'vk', '<?php echo $lang['SITE_LANG']; ?>');"><img src="img/footer/vk.png"></a><?php 
 		}		  
 	   ?>
 	  
-      <a href="https://www.youtube.com/c/dziejekhorinismod" target="_blank"><img src="img/footer/youtube.png"></a>
-      <a href="http://www.moddb.com/mods/the-history-of-khorinis" target="_blank"><img src="img/footer/moddb.png"></a>
-	  <a href="https://discordapp.com/invite/ySDMRhM" target="_blank"><img src="img/footer/discord.png"></a>
+      <a href="https://www.youtube.com/c/dziejekhorinismod" target="_blank" onClick="ga('send', 'event', 'socialmedia', 'youtube', '<?php echo $lang['SITE_LANG']; ?>');"><img src="img/footer/youtube.png"></a>
+      <a href="http://www.moddb.com/mods/the-history-of-khorinis" target="_blank" onClick="ga('send', 'event', 'socialmedia', 'moddb', '<?php echo $lang['SITE_LANG']; ?>');"><img src="img/footer/moddb.png"></a>
+	  <a href="https://discordapp.com/invite/ySDMRhM" target="_blank" onClick="ga('send', 'event', 'socialmedia', 'discord', '<?php echo $lang['SITE_LANG']; ?>');"><img src="img/footer/discord.png"></a>
     </div>
 	
     <div class="lang-bar">
-      <a href="http://dzieje-khorinis.pl"><img src="img/lang/pl.jpg"></a>
-      <a href="http://thehistoryofkhorinis.com/?lang=en"><img src="img/lang/gb.jpg"></a>
-      <a href="http://thehistoryofkhorinis.com/?lang=ru"><img src="img/lang/ru.jpg"></a>
+      <a href="http://dzieje-khorinis.pl" onClick="ga('send', 'event', 'lang', 'pl');"><img src="img/lang/pl.jpg"></a>
+      <a href="http://thehistoryofkhorinis.com/?lang=en" onClick="ga('send', 'event', 'lang', 'en', '<?php echo $lang['SITE_LANG']; ?>');"><img src="img/lang/gb.jpg"></a>
+      <a href="http://thehistoryofkhorinis.com/?lang=ru" onClick="ga('send', 'event', 'lang', 'ru', '<?php echo $lang['SITE_LANG']; ?>');"><img src="img/lang/ru.jpg"></a>
     </div>
 	
     <div class="top-container scrollme">
@@ -88,9 +93,9 @@
         <li><a href="#features"><?php echo $lang['FEATURES_T']; ?></a></li>
         <li><a href="#story"><?php echo $lang['STORY_T']; ?></a></li>
         <li><a href="#team"><?php echo $lang['TEAM_T']; ?></a></li>
-        <li><a href="#gallery"><?php echo $lang['GALLERY_T']; ?></a></li>
-        <li><a href="#download"> <?php echo $lang['DOWNLOAD_T'] ?></a></li>
-        <li><a href="https://forum.soulfire.com.pl" target = "_blank"> <?php echo $lang['FORUM'] ?></a></li>
+        <li><a href="#gallery" onClick="ga('send', 'event', 'insite', 'gallery', '<?php echo $lang['SITE_LANG']; ?>');"><?php echo $lang['GALLERY_T']; ?></a></li>
+        <li><a href="#download" onClick="ga('send', 'event', 'insite', 'download', '<?php echo $lang['SITE_LANG']; ?>');"> <?php echo $lang['DOWNLOAD_T'] ?></a></li>
+        <li><a href="http://dzieje-khorinis.pl/forum" target = "_blank" onClick="ga('send', 'event', 'socialmedia', 'forum', '<?php echo $lang['SITE_LANG']; ?>');"> <?php echo $lang['FORUM'] ?></a></li>
         </div>
       </ul>
     </nav>
@@ -175,11 +180,11 @@
 	<br>
 
 	<div style="margin: 0; text-align:center">
-	  <span class="dot" onclick="currentSlide(1)"></span> 
-	  <span class="dot" onclick="currentSlide(2)"></span> 
-	  <span class="dot" onclick="currentSlide(3)"></span> 
-	  <span class="dot" onclick="currentSlide(4)"></span> 
-	  <span class="dot" onclick="currentSlide(5)"></span> 
+	  <span class="dot" onclick="currentSlide(1); ga('send', 'event', 'insite', 'story_slide_1', '<?php echo $lang['SITE_LANG']; ?>');"></span> 
+	  <span class="dot" onclick="currentSlide(2); ga('send', 'event', 'insite', 'story_slide_2', '<?php echo $lang['SITE_LANG']; ?>');"></span> 
+	  <span class="dot" onclick="currentSlide(3); ga('send', 'event', 'insite', 'story_slide_3', '<?php echo $lang['SITE_LANG']; ?>');"></span> 
+	  <span class="dot" onclick="currentSlide(4); ga('send', 'event', 'insite', 'story_slide_4', '<?php echo $lang['SITE_LANG']; ?>');"></span> 
+	  <span class="dot" onclick="currentSlide(5); ga('send', 'event', 'insite', 'story_slide_5', '<?php echo $lang['SITE_LANG']; ?>');"></span> 
 	</div>
 
 	<br>
@@ -223,8 +228,8 @@
 	<br>
 
 	<div style="margin: 0; text-align:center">
-	  <span class="dot1" onclick="currentSlide1(1)"></span> 
-	  <span class="dot1" onclick="currentSlide1(2)"></span> 
+	  <span class="dot1" onclick="currentSlide1(1); ga('send', 'event', 'insite', 'team_slide_1', '<?php echo $lang['SITE_LANG']; ?>');"></span> 
+	  <span class="dot1" onclick="currentSlide1(2); ga('send', 'event', 'insite', 'team_slide_2', '<?php echo $lang['SITE_LANG']; ?>');"></span> 
 	</div>
 	    
       <hr class="style2">
@@ -239,7 +244,7 @@
         <h2><?php echo $lang['TEAM_REC_T']; ?></h2>
         <?php echo $lang['TEAM_REC_1']; ?>
         <p class="wer"><?php echo $lang['TEAM_REC_2']; ?>
-        <p class="wer"><?php echo $lang['TEAM_REC_3']; ?></p>
+        <p class="wer" onClick="ga('send', 'event', 'insite', 'job_email', '<?php echo $lang['SITE_LANG']; ?>');"><?php echo $lang['TEAM_REC_3']; ?></p>
         <p class="wer"><?php echo $lang['TEAM_REC_4']; ?></p>
       </div>
     </div>
@@ -247,19 +252,19 @@
 
   <a id="gallery" class="anchor"></a>
   <div>
-	<iframe class="gallery" src="https://www.youtube.com/embed/jarXyWleCDc" frameborder="0" allowfullscreen></iframe>
-	<iframe class="gallery" src="https://www.youtube.com/embed/vnoVmUTamXM" frameborder="0" allowfullscreen></iframe>	
-    <iframe class="gallery" src="https://www.youtube.com/embed/SS_RRuNCe6Y" frameborder="0" allowfullscreen></iframe>
-    <iframe class="gallery" src="https://www.youtube.com/embed/O9-r6dbUpfQ" frameborder="0" allowfullscreen></iframe>
+	<iframe class="gallery" src="https://www.youtube.com/embed/jarXyWleCDc" frameborder="0" allowfullscreen onClick="ga('send', 'event', 'insite', 'video_1', '<?php echo $lang['SITE_LANG']; ?>');"></iframe>
+	<iframe class="gallery" src="https://www.youtube.com/embed/vnoVmUTamXM" frameborder="0" allowfullscreen onClick="ga('send', 'event', 'insite', 'video_2', '<?php echo $lang['SITE_LANG']; ?>');"></iframe>	
+    <iframe class="gallery" src="https://www.youtube.com/embed/SS_RRuNCe6Y" frameborder="0" allowfullscreen onClick="ga('send', 'event', 'insite', 'video_3', '<?php echo $lang['SITE_LANG']; ?>');"></iframe>
+    <iframe class="gallery" src="https://www.youtube.com/embed/O9-r6dbUpfQ" frameborder="0" allowfullscreen onClick="ga('send', 'event', 'insite', 'video_4', '<?php echo $lang['SITE_LANG']; ?>');"></iframe>
 	
-	<a class="gallery" href="img/screens/1.jpg" style="background-image: url(img/screens/1.jpg);" data-lightbox="gallery"></a>
-    <a class="gallery" href="img/screens/2.jpg" style="background-image: url(img/screens/2.jpg);" data-lightbox="gallery"></a>
-    <a class="gallery" href="img/screens/3.jpg" style="background-image: url(img/screens/3.jpg);" data-lightbox="gallery"></a>
-    <a class="gallery" href="img/screens/4.jpg" style="background-image: url(img/screens/4.jpg);" data-lightbox="gallery"></a>
-    <a class="gallery" href="img/screens/5.jpg" style="background-image: url(img/screens/5.jpg);" data-lightbox="gallery"></a>
-    <a class="gallery" href="img/screens/6.jpg" style="background-image: url(img/screens/6.jpg);" data-lightbox="gallery"></a>
-    <a class="gallery" href="img/screens/7.jpg" style="background-image: url(img/screens/7.jpg);" data-lightbox="gallery"></a>
-    <a class="gallery" href="img/screens/8.jpg" style="background-image: url(img/screens/8.jpg);" data-lightbox="gallery"></a>		
+	<a class="gallery" href="img/screens/1.jpg" style="background-image: url(img/screens/1.jpg);" data-lightbox="gallery" onClick="ga('send', 'event', 'insite', 'scr_1', '<?php echo $lang['SITE_LANG']; ?>');"></a>
+    <a class="gallery" href="img/screens/2.jpg" style="background-image: url(img/screens/2.jpg);" data-lightbox="gallery" onClick="ga('send', 'event', 'insite', 'scr_2', '<?php echo $lang['SITE_LANG']; ?>');"></a>
+    <a class="gallery" href="img/screens/3.jpg" style="background-image: url(img/screens/3.jpg);" data-lightbox="gallery" onClick="ga('send', 'event', 'insite', 'scr_3', '<?php echo $lang['SITE_LANG']; ?>');"></a>
+    <a class="gallery" href="img/screens/4.jpg" style="background-image: url(img/screens/4.jpg);" data-lightbox="gallery" onClick="ga('send', 'event', 'insite', 'scr_4', '<?php echo $lang['SITE_LANG']; ?>');"></a>
+    <a class="gallery" href="img/screens/5.jpg" style="background-image: url(img/screens/5.jpg);" data-lightbox="gallery" onClick="ga('send', 'event', 'insite', 'scr_5', '<?php echo $lang['SITE_LANG']; ?>');"></a>
+    <a class="gallery" href="img/screens/6.jpg" style="background-image: url(img/screens/6.jpg);" data-lightbox="gallery" onClick="ga('send', 'event', 'insite', 'scr_6', '<?php echo $lang['SITE_LANG']; ?>');"></a>
+    <a class="gallery" href="img/screens/7.jpg" style="background-image: url(img/screens/7.jpg);" data-lightbox="gallery" onClick="ga('send', 'event', 'insite', 'scr_7', '<?php echo $lang['SITE_LANG']; ?>');"></a>
+    <a class="gallery" href="img/screens/8.jpg" style="background-image: url(img/screens/8.jpg);" data-lightbox="gallery" onClick="ga('send', 'event', 'insite', 'scr_8', '<?php echo $lang['SITE_LANG']; ?>');"></a>		
   </div>
   <div class="third">
     <a id="download" class="anchor"></a>
@@ -279,10 +284,10 @@
 	</style>
 
 	<div id="mc_embed_signup">
-		<form action= "<?php echo $lang['NEWSLETTER_URL'] ?>"  method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+		<form action= "<?php echo $lang['NEWSLETTER_URL'] ?>" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 			<div id="mc_embed_signup_scroll">
 			<label for="mce-EMAIL"> <?php echo $lang['NEWSLETTER_TEXT'] ?> </label>
-			<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="<?php echo $lang['NEWSLETTER_EMAIL'] ?>" required>		
+			<input onClick="ga('send', 'event', 'other', 'newsletter', '<?php echo $lang['SITE_LANG']; ?>');" type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="<?php echo $lang['NEWSLETTER_EMAIL'] ?>" required>		
 			<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="<?php echo $lang['NEWSLETTER_EMAIL'] ?>" tabindex="-1" value=""></div>
 			<div class="clear"><input type="submit" value="<?php echo $lang['NEWSLETTER_BUTTON'] ?>" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
 			</div>
@@ -294,33 +299,33 @@
 	
     <div>
       <!-- <a href="#" target="_blank"><img src="img/footer/twitter.png"></a> -->
-      <a href="https://www.facebook.com/dziejekhorinis/" target="_blank"><img src="img/footer/facebook.png"></a>
+      <a href="https://www.facebook.com/dziejekhorinis/" target="_blank" onClick="ga('send', 'event', 'socialmedia', 'facebook', '<?php echo $lang['SITE_LANG']; ?>');"><img src="img/footer/facebook.png"></a>
 	  
 	   <?php 
 		switch ($lang_file) 
 		{
 			case 'russian.php':
-			 ?><a href="http://vk.com/gothic2_historyofkhorinis" target="_blank"><img src="img/footer/vk.png"></a> <?php 
+			 ?><a href="http://vk.com/gothic2_historyofkhorinis" target="_blank" onClick="ga('send', 'event', 'socialmedia', 'vk', '<?php echo $lang['SITE_LANG']; ?>');"><img src="img/footer/vk.png"></a> <?php 
 			break;
 		}	  
 	  ?>
 	  
-      <a href="https://www.youtube.com/c/dziejekhorinismod" target="_blank"><img src="img/footer/youtube.png"></a>
-      <a href="http://www.moddb.com/mods/the-history-of-khorinis" target="_blank"><img src="img/footer/moddb.png"></a>
-	  <a href="https://discordapp.com/invite/ySDMRhM" target="_blank"><img src="img/footer/discord.png"></a>
+      <a href="https://www.youtube.com/c/dziejekhorinismod" target="_blank" onClick="ga('send', 'event', 'socialmedia', 'youtube', '<?php echo $lang['SITE_LANG']; ?>');"><img src="img/footer/youtube.png"></a>
+      <a href="http://www.moddb.com/mods/the-history-of-khorinis" target="_blank" onClick="ga('send', 'event', 'socialmedia', 'moddb', '<?php echo $lang['SITE_LANG']; ?>');"><img src="img/footer/moddb.png"></a>
+	  <a href="https://discordapp.com/invite/ySDMRhM" target="_blank" onClick="ga('send', 'event', 'socialmedia', 'discord', '<?php echo $lang['SITE_LANG']; ?>');"><img src="img/footer/discord.png"></a>
 	   	  	  
     </div>
 	
-	<a href = "https://www.dropbox.com/sh/ob5ax4k1a9ygg5t/AAAanAujZDHjmH6QwyOiSh80a?dl=0"> <font color = "green"> <?php echo $lang['PRESS_PACK']; ?> </font> </a>
+	<a href = "https://www.dropbox.com/sh/ob5ax4k1a9ygg5t/AAAanAujZDHjmH6QwyOiSh80a?dl=0" onClick="ga('send', 'event', 'other', 'presspack', '<?php echo $lang['SITE_LANG']; ?>');" target="_blank"> <font color = "green"> <?php echo $lang['PRESS_PACK']; ?> </font> </a>
 	
 	</br> </br>
 	
     <img src="img/logo.png" class="logo">
     Copyright 2017 © SoulFire. All rights reserved <br>
-    <span class="small">Design & Code: <a href="https://myxoske.pl" target="_blank">myxoske.pl</a></span>
+    <span class="small">Design & Code: <a href="https://myxoske.pl" target="_blank" onClick="ga('send', 'event', 'other', 'myxoske', '<?php echo $lang['SITE_LANG']; ?>');">myxoske.pl</a></span>
 	
   </footer>       
-  <a href="#top" class="scrolltop"><i class="fa fa-arrow-up" aria-hidden="true"></i> <?php echo $lang['TOP']; ?></a>  
+  <a href="#top" class="scrolltop" onClick="ga('send', 'event', 'other', 'to_top', '<?php echo $lang['SITE_LANG']; ?>');"><i class="fa fa-arrow-up" aria-hidden="true"></i> <?php echo $lang['TOP']; ?></a>  
   <script src="js/lightbox.js"></script> 
   <script src="js/jquery.dlmenu.js"></script>
  
