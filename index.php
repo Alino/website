@@ -45,7 +45,8 @@
    <?php include_once("google_analytics.php") ?>
 
   <div class="se-pre-con">
-    <div class="loading"><i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i></div>
+    <div class="loading"><i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i> </br></br> <?php echo $lang['ADBLOCK_WARNING']; ?> </div>
+	
   </div>
   <a id="top" class="anchor magnetic"></a>
   <div class="top" data-parallax="scroll" data-image-src="img/bg.jpg"> 
@@ -316,7 +317,7 @@
 	   	  	  
     </div>
 	
-	<a href = "https://www.dropbox.com/sh/ob5ax4k1a9ygg5t/AAAanAujZDHjmH6QwyOiSh80a?dl=0" onClick="ga('send', 'event', 'other', 'presspack', '<?php echo $lang['SITE_LANG']; ?>');" target="_blank"> <font color = "green"> <?php echo $lang['PRESS_PACK']; ?> </font> </a>
+	<!-- <a href = "https://www.dropbox.com/sh/ob5ax4k1a9ygg5t/AAAanAujZDHjmH6QwyOiSh80a?dl=0" onClick="ga('send', 'event', 'other', 'presspack', '<?php echo $lang['SITE_LANG']; ?>');" target="_blank"> <font color = "green"> <?php echo $lang['PRESS_PACK']; ?> </font> </a> -->
 	
 	</br> </br>
 	
@@ -325,7 +326,7 @@
     <span class="small">Design & Code: <a href="https://myxoske.pl" target="_blank" onClick="ga('send', 'event', 'other', 'myxoske', '<?php echo $lang['SITE_LANG']; ?>');">myxoske.pl</a></span>
 	
   </footer>       
-  <a href="#top" class="scrolltop" onClick="ga('send', 'event', 'other', 'to_top', '<?php echo $lang['SITE_LANG']; ?>');"><i class="fa fa-arrow-up" aria-hidden="true"></i> <?php echo $lang['TOP']; ?></a>  
+  <a href="#top" class="scrolltop" onClick="ga('send', 'event', 'other', 'to_top', '<?php echo $lang['SITE_LANG']; ?>');"><i class="fa fa-arrow-up" aria-hidden="true"></i> <?php echo $lang['TOP']; ?></a> 
   <script src="js/lightbox.js"></script> 
   <script src="js/jquery.dlmenu.js"></script>
  

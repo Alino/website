@@ -56,7 +56,7 @@
 	$lang['TEAM_REC_T'] = 'Вербовка';
 	$lang['TEAM_REC_1'] = 'Несмотря на продвинутой стадии проекта все время мы открыты для новых людей - особенно 3D-графики, 2D, писатели, программисты, профессиональные актеры, и leveldesignerów, работающих в Spacer.';
 	$lang['TEAM_REC_2'] = 'Если у Вас имеются опыт работы с любой из этих сфер деятельности, и Вы бы хотели принять участие в нашем проекте, мы будем рады приветствовать Вас в нашей команде.';
-	$lang['TEAM_REC_3'] = 'Лица, заинтересованные в работе с нами, или если Вы бы хотели просто написать нам, пожалуйста, свяжитесь: <a href = "mailto:contact@thehistoryofkhorinis.com"> <font color = "green"> contact@thehistoryofkhorinis.com </font></a>.';
+	$lang['TEAM_REC_3'] = 'Лица, заинтересованные в работе с нами, или если Вы бы хотели просто написать нам, пожалуйста, свяжитесь: <a href = "mailto:contact@thehistoryofkhorinis.com"><font color = "green">contact@thehistoryofkhorinis.com</font><a>.';
 	$lang['TEAM_REC_4'] = 'ПРИМЕЧАНИЕ - пожалуйста, примерное СОЕДИНЕНИЕ их работа, с тем чтобы мы могли оценить свои навыки.';
 
 	$lang['DOWNLOAD_T'] = 'Скачать';
@@ -77,4 +77,6 @@
 
 	$lang['NEWSLETTER_URL'] = '//dzieje-khorinis.us15.list-manage.com/subscribe/post?u=814041f4e89f3eb1f68c2ab53&id=bc671c5479';
 	$lang['NEWSLETTER_ID'] = 'b_814041f4e89f3eb1f68c2ab53_bc671c5479';
+	
+	$lang['ADBLOCK_WARNING'] = 'If you are waiting more than 10 seconds, try to turn off your Adblock and refresh page.';	
 ?>

@@ -56,7 +56,7 @@
 	$lang['TEAM_REC_T'] = 'Rekrutacja';
 	$lang['TEAM_REC_1'] = 'Pomimo zaawansowanego etapu prac nad projektem cały czas jesteśmy otwarci na nowe osoby, aktualnie zwłaszcza grafików 3D i 2D, scenarzystów, skrypterów oraz profesjonalnych aktorów.';
 	$lang['TEAM_REC_2'] = 'Jeśli posiadasz wiedzę i doświadczenie w jednej z tych dziedzin oraz masz ochotę wziąć udział w naszym projekcie gorąco, zachęcamy do wysyłania zgłoszenia.';
-	$lang['TEAM_REC_3'] = 'Zainteresowanych zarówno pracą, jak i skontaktowaniem się z nami, prosimy o wysyłanie wiadomości pod adres: href = "mailto:rekrutacja@dzieje-khorinis.pl"> color = "green"> rekrutacja@dzieje-khorinis.pl font&gt;a&gt;.';
+	$lang['TEAM_REC_3'] = 'Zainteresowanych zarówno pracą, jak i skontaktowaniem się z nami, prosimy o wysyłanie wiadomości pod adres: <a href = "mailto:rekrutacja@dzieje-khorinis.pl"><font color = "green"> rekrutacja@dzieje-khorinis.pl</font></a>.';
 	$lang['TEAM_REC_4'] = 'UWAGA – przy mailach rekrutacyjnych prosimy o DOŁĄCZANIE SWOICH PRZYKŁADOWYCH PRAC, tak abyśmy mogli ocenić Wasze umiejętności.';
 
 	$lang['DOWNLOAD_T'] = 'Download';
@@ -77,4 +77,6 @@
 
 	$lang['NEWSLETTER_URL'] = '//dzieje-khorinis.us15.list-manage.com/subscribe/post?u=814041f4e89f3eb1f68c2ab53&amp;id=37c9dd4b65';
 	$lang['NEWSLETTER_ID'] = 'b_814041f4e89f3eb1f68c2ab53_37c9dd4b65';
+	
+	$lang['ADBLOCK_WARNING'] = 'Jeśli czekasz dłużej, niż 10 sekund wyłącz Adblocka i odśwież stronę.';	
 ?>

@@ -23,11 +23,11 @@
 	$lang['FEATURES_5'] = 'Ability to use a shield';
 	$lang['FEATURES_6'] = 'Many treasures to be found';
 	$lang['FEATURES_7'] = 'Side quests';
-	$lang['FEATURES_8'] = 'Humoristic elements.';
+	$lang['FEATURES_8'] = 'Humoristic elements';
 	$lang['FEATURES_9'] = 'New guild, items and armors';
 	$lang['FEATURES_10'] = 'Professional soundtrack, composed especially for the needs of this addon';
-	$lang['FEATURES_11'] = 'New skills (advanced blacksmithing, cooking, etc.).';
-	$lang['FEATURES_12'] = 'Hugh numer of new PFX.';
+	$lang['FEATURES_11'] = 'New skills (advanced blacksmithing, cooking, etc.)';
+	$lang['FEATURES_12'] = 'Hugh numer of new PFX';
 	$lang['FEATURES_13'] = 'and many more';
 
 	$lang['STORY_T'] = 'Story';
@@ -55,7 +55,7 @@
 	$lang['TEAM_REC_T'] = 'Recruitment';
 	$lang['TEAM_REC_1'] = 'Despite advanded stage of our work on the project, we are still opened for fresh people — now especially 3D and 2D graphic designers, coders, professional actors, and also level designers working in program ‘Spacer’.';
 	$lang['TEAM_REC_2'] = 'If you have knowledge and experience in one of those fields, and you are eager to take part in our project, we encourage you to send your submission. ';
-	$lang['TEAM_REC_3'] = 'Those who are interested to work with us, or even those, who want to contact with us, please send your message on this e-mail: href = "mailto:contact@thehistoryofkhorinis.com"&gt; "green"&gt; contact@thehistoryofkhorinis.comfont&gt;a>.';
+	$lang['TEAM_REC_3'] = 'Those who are interested to work with us, or even those, who want to contact with us, please send your message on this e-mail: <a href = "mailto:contact@thehistoryofkhorinis.com"><font color = "green">contact@thehistoryofkhorinis.com</font><a>.';
 	$lang['TEAM_REC_4'] = 'ATTENTION – for recruitment mails, we need AN EXAMPLE OF YOUR WORK in order to rate your skills.';
 
 	$lang['DOWNLOAD_T'] = 'Download';
@@ -76,4 +76,6 @@
 
 	$lang['NEWSLETTER_URL'] = '//dzieje-khorinis.us15.list-manage.com/subscribe/post?u=814041f4e89f3eb1f68c2ab53&id=bc671c5479';
 	$lang['NEWSLETTER_ID'] = 'b_814041f4e89f3eb1f68c2ab53_bc671c5479';
+	
+	$lang['ADBLOCK_WARNING'] = 'If you are waiting more than 10 seconds, try to turn off your Adblock and refresh page.';	
 ?>
