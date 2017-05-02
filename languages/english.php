@@ -77,5 +77,7 @@
 	$lang['NEWSLETTER_URL'] = '//dzieje-khorinis.us15.list-manage.com/subscribe/post?u=814041f4e89f3eb1f68c2ab53&id=bc671c5479';
 	$lang['NEWSLETTER_ID'] = 'b_814041f4e89f3eb1f68c2ab53_bc671c5479';
 	
-	$lang['ADBLOCK_WARNING'] = 'If you are waiting more than 10 seconds, try to turn off your Adblock and refresh page.';	
+	$lang['ADBLOCK_WARNING_T'] = 'Turn off AdBlock';
+	$lang['ADBLOCK_WARNING_1'] = 'There aren\'t ABSOLUTELY no ads on our site, but some Adblock software block our photos, videos and other important things you should see to become fully familiar with the History of Khorinis.';	
+	$lang['ADBLOCK_WARNING_2'] = 'Back to website.';	
 ?>

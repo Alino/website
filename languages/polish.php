@@ -78,5 +78,7 @@
 	$lang['NEWSLETTER_URL'] = '//dzieje-khorinis.us15.list-manage.com/subscribe/post?u=814041f4e89f3eb1f68c2ab53&amp;id=37c9dd4b65';
 	$lang['NEWSLETTER_ID'] = 'b_814041f4e89f3eb1f68c2ab53_37c9dd4b65';
 	
-	$lang['ADBLOCK_WARNING'] = 'Jeśli czekasz dłużej, niż 10 sekund wyłącz Adblocka i odśwież stronę.';	
+	$lang['ADBLOCK_WARNING_T'] = 'Wyłącz AdBlock';	
+	$lang['ADBLOCK_WARNING_1'] = 'Na naszej stronie nie ma ABSOLUTNIE ŻADNYCH reklam, lecz niektóre programy typu Adblock blokują nasze zdjęcia, filmy oraz inne ważne rzeczy, które powinieneś zobaczyć, aby w pełni zapoznać się z Dziejami Khorinis.';	
+	$lang['ADBLOCK_WARNING_2'] = 'Wróc do strony głównej.';	
 ?>

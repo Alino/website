@@ -33,6 +33,8 @@
   <script src="js/stickymenu.js"></script>
   <script src="js/scroll.js"></script>
   <script src="js/modernizr.custom.js"></script>  
+  
+  <script src="/js/ads.js"></script>
 </head>  
 
 <script>
@@ -40,14 +42,20 @@
 		$(".se-pre-con").fadeOut("slow");;
 	});
 </script> 
-
+	
 <body>
+	<script>
+      if (window.canRunAds === undefined) {        
+		window.location = '/AdBlockNotice.php';		
+      }
+    </script>
+	
    <?php include_once("google_analytics.php") ?>
 
   <div class="se-pre-con">
-    <div class="loading"><i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i> </br></br> <?php echo $lang['ADBLOCK_WARNING']; ?> </div>
-	
+    <div class="loading"><i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i> </div>	
   </div>
+  
   <a id="top" class="anchor magnetic"></a>
   <div class="top" data-parallax="scroll" data-image-src="img/bg.jpg"> 
     <div class="bar-top"><?php echo $lang['HELLO']; ?> | <?php echo $lang['SITE_URL']; ?> <span class="fr"><?php echo $lang['SITE_EMAIL']; ?></span></div>
