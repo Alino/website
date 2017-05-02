@@ -79,6 +79,7 @@
 	$lang['NEWSLETTER_ID'] = 'b_814041f4e89f3eb1f68c2ab53_bc671c5479';
 	
 	$lang['ADBLOCK_WARNING_T'] = 'Выключите AdBlock';
-	$lang['ADBLOCK_WARNING_1'] = 'На нашем сайте абсолютно нет рекламы, но некоторые из программ Adblock блокируют наши фотографии, видео и другие важные вещи, которые вы должны увидеть, чтобы полностью ознакомиться с Историей Хориниса.';	
-	$lang['ADBLOCK_WARNING_2'] = 'Вернуться на сайт.';	
+	$lang['ADBLOCK_WARNING_1'] = 'На нашем сайте абсолютно нет рекламы, но некоторые из программ Adblock блокируют наши фотографии, видео и другие важные вещи, которые вы должны увидеть, чтобы полностью ознакомиться с Историей Хориниса.';
+	$lang['ADBLOCK_WARNING_2'] = 'Вернуться на сайт.';
+	$lang['ADBLOCK_WARNING_LOADING'] = 'If you are waiting more than 10 second, got to <a href = "/AdBlockNotice.php"><font color = "green">this</font></a> site.';
 ?>

@@ -53,7 +53,7 @@
     </script>
 	
   <div class="se-pre-con">
-    <div class="loading"><i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i> </div>	
+    <div class="loading"><i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i> </br> </br> <?php echo $lang['ADBLOCK_WARNING_LOADING']; ?> </div>	
   </div>
   
   <a id="top" class="anchor magnetic"></a>

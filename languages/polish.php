@@ -80,5 +80,6 @@
 	
 	$lang['ADBLOCK_WARNING_T'] = 'Wyłącz AdBlock';	
 	$lang['ADBLOCK_WARNING_1'] = 'Na naszej stronie nie ma ABSOLUTNIE ŻADNYCH reklam, lecz niektóre programy typu Adblock blokują nasze zdjęcia, filmy oraz inne ważne rzeczy, które powinieneś zobaczyć, aby w pełni zapoznać się z Dziejami Khorinis.';	
-	$lang['ADBLOCK_WARNING_2'] = 'Wróc do strony głównej.';	
+	$lang['ADBLOCK_WARNING_2'] = 'Wróc do strony głównej.';
+	$lang['ADBLOCK_WARNING_LOADING'] = 'Jeśli czekasz więcej, niż 10 sekund przejdź do <a href = "/AdBlockNotice.php"><font color = "green">tej</font></a> strony.';
 ?>

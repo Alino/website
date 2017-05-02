@@ -79,5 +79,6 @@
 	
 	$lang['ADBLOCK_WARNING_T'] = 'Turn off AdBlock';
 	$lang['ADBLOCK_WARNING_1'] = 'There aren\'t ABSOLUTELY no ads on our site, but some Adblock software block our photos, videos and other important things you should see to become fully familiar with the History of Khorinis.';	
-	$lang['ADBLOCK_WARNING_2'] = 'Back to website.';	
+	$lang['ADBLOCK_WARNING_2'] = 'Back to website.';
+	$lang['ADBLOCK_WARNING_LOADING'] = 'If you are waiting more than 10 second, got to <a href = "/AdBlockNotice.php"><font color = "green">this</font></a> site.';
 ?>
