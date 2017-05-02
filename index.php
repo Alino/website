@@ -44,14 +44,14 @@
 </script> 
 	
 <body>
+	 <?php include_once("google_analytics.php") ?>
+	 
 	<script>
       if (window.canRunAds === undefined) {        
 		window.location = '/AdBlockNotice.php';		
       }
     </script>
 	
-   <?php include_once("google_analytics.php") ?>
-
   <div class="se-pre-con">
     <div class="loading"><i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i> </div>	
   </div>
