@@ -22,25 +22,6 @@ else
 		$lang = 'en';
 }
 
-switch ($lang) 
-{
-	case 'pl':
-	$lang_file = 'polish.php';
-	break;
-
-	case 'en':
-	$lang_file = 'english.php';
-	break;
-
-	case 'ru':
-	$lang_file = 'russian.php';
-	break;
-
-	case 'it':
-	$lang_file = 'italian.php';
-	break;
-}
-
-include_once 'languages/'.$lang_file;
+include_once 'languages/'.$lang.'.php';
 
 ?>
