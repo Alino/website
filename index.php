@@ -44,17 +44,9 @@
 </script> 
 	
 <body>
-	 <?php include_once("google_analytics.php") ?>
-	 
-	<script>
-      if (window.canRunAds === undefined) {        
-		window.location = '/AdBlockNotice.php';		
-      }
-    </script>
+  <?php include_once("google_analytics.php") ?>
 	
-  <div class="se-pre-con">
-    <div class="loading"><i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i> </br> </br> <?php echo $lang['ADBLOCK_WARNING_LOADING']; ?> </div>	
-  </div>
+  <!-- <div class="se-pre-con"> <div class="loading"><i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i> </br> </br> <?php //echo $lang['ADBLOCK_WARNING_LOADING']; ?> </div> </div> -->
   
   <a id="top" class="anchor magnetic"></a>
   <div class="top" data-parallax="scroll" data-image-src="img/bg.jpg"> 
@@ -92,7 +84,27 @@
         });
     });
   </script>           
-           
+  
+	<div id="block" class="modal">
+		<div class="modal-content">	
+			<span class="close">&times;</span>
+			<h1 style = "font-size: 2.5em;"><font face = "Helvetica"> <?php echo $lang['ADBLOCK_WARNING_T']; ?> </font></h1>
+			<p style = "font-size: 1.5em;"> <font color = "black"> <?php echo $lang['ADBLOCK_WARNING_1']; ?></font> </p>		
+		</div>
+	</div>
+	
+	<script>
+		document.getElementsByClassName("close")[0].onclick = function() {
+			document.getElementById('block').style.display = "none";
+		}
+		
+		if (window.canRunAds === undefined) {        
+			document.getElementById('block').style.display = "block";
+		} else {
+			document.getElementById('block').style.display = "none";
+		}
+    </script>
+	
   <div class="menu" id="stickyheader">
     <nav>
       <ul>
