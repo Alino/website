@@ -11,8 +11,7 @@
   
   <meta name="title" content= "<?php echo $lang['TITLE'];?>">
   <meta name="description" content= "<?php echo $lang['INFO'];?>">
-  
-  <meta name="keywords" content= "dzieje khorinis the history of khorinis soulfire" />
+  <meta name="keywords" content= "dzieje khorinis the history of khorinis soulfire gothic gothic2 noc kruka piranha bytes premiera night of the raven" />
   
   <meta property="og:image" content="img/company_og_<?php echo $lang['SITE_LANG'];?>.png" />
   
@@ -55,24 +54,34 @@
       <a href="https://www.facebook.com/dziejekhorinis/" target="_blank" onClick="ga('send', 'event', 'socialmedia', 'facebook', '<?php echo $lang['SITE_LANG']; ?>');"><img src="img/footer/facebook.png"></a>
 	  
 	   <?php 
-		if ($lang_file == 'russian.php') {
-			 ?><a href="http://vk.com/gothic2_historyofkhorinis" target="_blank" onClick="ga('send', 'event', 'socialmedia', 'vk', '<?php echo $lang['SITE_LANG']; ?>');"><img src="img/footer/vk.png"></a><?php 
+		if ($lang['SITE_LANG'] == 'ru') {
+			?><a href="http://vk.com/gothic2_historyofkhorinis" target="_blank" onClick="ga('send', 'event', 'socialmedia', 'vk', '<?php echo $lang['SITE_LANG']; ?>');"><img src="img/footer/vk.png"></a><?php 
 		}		  
 	   ?>
 	  
       <a href="https://www.youtube.com/c/dziejekhorinismod" target="_blank" onClick="ga('send', 'event', 'socialmedia', 'youtube', '<?php echo $lang['SITE_LANG']; ?>');"><img src="img/footer/youtube.png"></a>
       <a href="http://www.moddb.com/mods/the-history-of-khorinis" target="_blank" onClick="ga('send', 'event', 'socialmedia', 'moddb', '<?php echo $lang['SITE_LANG']; ?>');"><img src="img/footer/moddb.png"></a>
-	  <a href="https://discordapp.com/invite/ySDMRhM" target="_blank" onClick="ga('send', 'event', 'socialmedia', 'discord', '<?php echo $lang['SITE_LANG']; ?>');"><img src="img/footer/discord.png"></a>
+	  
+	    <?php 
+		if ($lang['SITE_LANG'] != 'ru') {
+			?> <a href="https://discordapp.com/invite/ySDMRhM" target="_blank" onClick="ga('send', 'event', 'socialmedia', 'discord', '<?php echo $lang['SITE_LANG']; ?>');"><img src="img/footer/discord.png"></a><?php 
+		}		  
+	   ?>	 
     </div>
 	
     <div class="lang-bar">
       <a href="http://dzieje-khorinis.pl" onClick="ga('send', 'event', 'lang', 'pl');"><img src="img/lang/pl.jpg"></a>
-      <a href="http://thehistoryofkhorinis.com/?lang=en" onClick="ga('send', 'event', 'lang', 'en', '<?php echo $lang['SITE_LANG']; ?>');"><img src="img/lang/gb.jpg"></a>
+      <a href="http://thehistoryofkhorinis.com/?lang=en" onClick="ga('send', 'event', 'lang', 'en', '<?php echo $lang['SITE_LANG']; ?>');"><img src="img/lang/en.jpg"></a>
+	  <a href="http://thehistoryofkhorinis.com/?lang=ge" onClick="ga('send', 'event', 'lang', 'ge', '<?php echo $lang['SITE_LANG']; ?>');"><img src="img/lang/ge.jpg"></a>     
+	  <a href="http://thehistoryofkhorinis.com/?lang=sk" onClick="ga('send', 'event', 'lang', 'sk', '<?php echo $lang['SITE_LANG']; ?>');"><img src="img/lang/sk.jpg"></a>     
+	  </br>
       <a href="http://thehistoryofkhorinis.com/?lang=ru" onClick="ga('send', 'event', 'lang', 'ru', '<?php echo $lang['SITE_LANG']; ?>');"><img src="img/lang/ru.jpg"></a>
+      <a href="http://thehistoryofkhorinis.com/?lang=cs" onClick="ga('send', 'event', 'lang', 'cs', '<?php echo $lang['SITE_LANG']; ?>');"><img src="img/lang/cs.jpg"></a>
+	  <a href="http://thehistoryofkhorinis.com/?lang=it" onClick="ga('send', 'event', 'lang', 'it', '<?php echo $lang['SITE_LANG']; ?>');"><img src="img/lang/it.jpg"></a>
     </div>
 	
-    <div class="top-container scrollme">
-      <img src="img/<?php echo $lang['LOGO']; ?>" id="logo">
+    <div class="top-container scrollme">	 
+      <img src="img/company_<?php echo $lang['SITE_LANG']; ?>.png" id="logo"> 
       <p><?php echo $lang['INFO']; ?></p>	  
     </div>    
   </div>
@@ -125,6 +134,7 @@
   <div class="container" id="to">
   
     <a id="intro" class="anchor"></a>
+	
     <div>
       <img src="img/knights.png" align="left" class="scrollme animateme"
 				data-when="enter"
@@ -134,12 +144,13 @@
 				data-opacity="0"
 				data-scale="1.2">
       <h1><i class="fa fa-fire" aria-hidden="true"></i> <?php echo $lang['INTRO_T']; ?></h1>
-      <p  class="wer"><?php echo $lang['INTRO']; ?></p>
+      <p class="wer"><?php echo $lang['INTRO']; ?></p>
     </div>   
     
     <hr class="style1">
 
     <a id="features" class="anchor"></a>
+	
     <div>
       <h1><i class="fa fa-bookmark" aria-hidden="true"></i> <?php echo $lang['FEATURES_T'] ?></h1>
       <img src="img/cat.png" align="right" class="mt60 mb20 scrollme animateme"
@@ -169,6 +180,7 @@
     <hr class="style1">
   
 	<a id="story" class="anchor"></a>
+	
 	<div>
      <h1><i class="fa fa-book" aria-hidden="true"></i> <?php echo $lang['STORY_T']; ?></h1>
 		
@@ -253,6 +265,8 @@
 	  <span class="dot1" onclick="currentSlide1(2); ga('send', 'event', 'insite', 'team_slide_2', '<?php echo $lang['SITE_LANG']; ?>');"></span> 
 	</div>
 	    
+	  <a id="jobs" class="anchor"></a>
+		
       <hr class="style2">
   
       <div class="list2 scrollme animateme"
@@ -272,8 +286,9 @@
   </div>
 
   <a id="gallery" class="anchor"></a>
+  
   <div>
-	<iframe class="gallery" src="https://www.youtube.com/embed/jarXyWleCDc" frameborder="0" allowfullscreen onClick="ga('send', 'event', 'insite', 'video_1', '<?php echo $lang['SITE_LANG']; ?>');"></iframe>
+	<iframe class="gallery" src="https://www.youtube.com/embed/EWjxMZIeLjY" frameborder="0" allowfullscreen onClick="ga('send', 'event', 'insite', 'video_1', '<?php echo $lang['SITE_LANG']; ?>');"></iframe>
 	<iframe class="gallery" src="https://www.youtube.com/embed/vnoVmUTamXM" frameborder="0" allowfullscreen onClick="ga('send', 'event', 'insite', 'video_2', '<?php echo $lang['SITE_LANG']; ?>');"></iframe>	
     <iframe class="gallery" src="https://www.youtube.com/embed/SS_RRuNCe6Y" frameborder="0" allowfullscreen onClick="ga('send', 'event', 'insite', 'video_3', '<?php echo $lang['SITE_LANG']; ?>');"></iframe>
     <iframe class="gallery" src="https://www.youtube.com/embed/O9-r6dbUpfQ" frameborder="0" allowfullscreen onClick="ga('send', 'event', 'insite', 'video_4', '<?php echo $lang['SITE_LANG']; ?>');"></iframe>
@@ -305,6 +320,8 @@
 	</style>
 
 	<div id="mc_embed_signup">
+		<a id="newsletter" class="anchor"></a>
+		
 		<form action= "<?php echo $lang['NEWSLETTER_URL'] ?>" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 			<div id="mc_embed_signup_scroll">
 			<label for="mce-EMAIL"> <?php echo $lang['NEWSLETTER_TEXT'] ?> </label>
@@ -318,16 +335,13 @@
 	</center>
 	</br>
 	
-    <div>
+    <div class = "social-media-footer">
       <!-- <a href="#" target="_blank"><img src="img/footer/twitter.png"></a> -->
       <a href="https://www.facebook.com/dziejekhorinis/" target="_blank" onClick="ga('send', 'event', 'socialmedia', 'facebook', '<?php echo $lang['SITE_LANG']; ?>');"><img src="img/footer/facebook.png"></a>
 	  
 	   <?php 
-		switch ($lang_file) 
-		{
-			case 'russian.php':
+			if ($lang['SITE_LANG'] == 'ru') {
 			 ?><a href="http://vk.com/gothic2_historyofkhorinis" target="_blank" onClick="ga('send', 'event', 'socialmedia', 'vk', '<?php echo $lang['SITE_LANG']; ?>');"><img src="img/footer/vk.png"></a> <?php 
-			break;
 		}	  
 	  ?>
 	  
@@ -343,10 +357,12 @@
 	
     <img src="img/logo.png" class="logo">
     Copyright 2017 © SoulFire. All rights reserved <br>
-    <span class="small">Design & Code: <a href="https://myxoske.pl" target="_blank" onClick="ga('send', 'event', 'other', 'myxoske', '<?php echo $lang['SITE_LANG']; ?>');">myxoske.pl</a></span>
+    <span class="small"> <?php echo $lang['AUTHOR_AND_TRANSLATOR']; ?> </br></span>
 	
-  </footer>       
+  </footer>  
+  
   <a href="#top" class="scrolltop" onClick="ga('send', 'event', 'other', 'to_top', '<?php echo $lang['SITE_LANG']; ?>');"><i class="fa fa-arrow-up" aria-hidden="true"></i> <?php echo $lang['TOP']; ?></a> 
+  
   <script src="js/lightbox.js"></script> 
   <script src="js/jquery.dlmenu.js"></script>
  
