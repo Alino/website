@@ -40,7 +40,7 @@
     "TEAM_REC_T": "Collabora con noi",
     "TEAM_REC_1": "Nonostante il nostro progetto si trovi in una fase avanzata, abbiamo ancora posti disponibili per nuovi collaboratori - in particolare, al momento cerchiamo grafici 2D e 3D, sviluppatori, attori professionisti e level designer che sappiano usare \"Spacer\".",
     "TEAM_REC_2": "Se avete esperienza in uno di questi campi e vi piacerebbe partecipare al progetto, siete caldamente invitati a presentare la vostra candidatura.",
-    "TEAM_REC_3": "Se siete interessati a lavorare con noi o volete contattarci, potete inviarci un messaggio al seguente indirizzo: <a href = \"mailto:contact@thehistoryofkhorinis.com\"><font color = \"green\">contact@thehistoryofkhorinis.com<\/font><\/a>.",
+    "TEAM_REC_3": "Se siete interessati a lavorare con noi o volete contattarci, potete inviarci un messaggio al seguente indirizzo: <a href = \"mailto:contact@thehistoryofkhorinis.com\"><font color = \"green\">contact@thehistoryofkhorinis.com</font></a>.",
     "TEAM_REC_4": "ATTENZIONE - per le e-mail di collaborazione, abbiamo bisogno di UN ESEMPIO DEL VOSTRO LAVORO per poter valutare le vostre abilità.",
     "DOWNLOAD_T": "Download",
     "DOWNLOAD": "Qui troverete il link di download il giorno del rilascio.",
@@ -54,12 +54,12 @@
     "ADBLOCK_WARNING_T": "Disattiva AdBlock",
     "ADBLOCK_WARNING_1": "Sul nostro sito non c'è nessuna pubblicità, ma alcuni programmi come Adblock bloccano foto, video e altre cose importanti, che dovreste vedere per conoscere a fondo la Storia di Khorinis.",
     "ADBLOCK_WARNING_2": "Ritorna alla pagina principale.",
-    "ADBLOCK_WARNING_LOADING": "Se l'attesa dura più di 10 secondi (su PC), vai a <a href = \"\/AdBlockNotice.php\"><font color = \"green\">questa<\/font><\/a> pagina.",
+    "ADBLOCK_WARNING_LOADING": "Se l'attesa dura più di 10 secondi (su PC), vai a <a href = \"/AdBlockNotice.php\"><font color = \"green\">questa</font></a> pagina.",
     "SITE_LANG": "it",
     "SITE_URL": "thehistoryofkhorinis.com",
     "SITE_EMAIL": "contact@thehistoryofkhorinis.com",
-    "NEWSLETTER_URL": "\/\/dzieje-khorinis.us15.list-manage.com\/subscribe\/post?u=814041f4e89f3eb1f68c2ab53&id=bc671c5479",
+    "NEWSLETTER_URL": "//dzieje-khorinis.us15.list-manage.com/subscribe/post?u=814041f4e89f3eb1f68c2ab53&id=bc671c5479",
     "NEWSLETTER_ID": "b_814041f4e89f3eb1f68c2ab53_bc671c5479",
     "RELEASE_DATE": "Il nostro addon è in grado di unire tutti questi elementi - stiamo riscrivendo degli script nel codice di gioco, inserendo personaggi nel mondo e aggiungendo il doppiaggio, contemporaneamente e nella stessa fase di sviluppo. Non forniamo nessuna data di rilascio, perché non sappiamo se ci vorranno due mesi oppure otto. Abbiamo delle stime, ma ci sono molte variabili che sono impossibili da calcolare. Stiamo lavorando sodo, perfezionando ogni dettaglio, e ci sono altri 50 attori di cui dobbiamo preparare il doppiaggio. Stiamo prendendo accordi per ciascuno di loro con lo studio di registrazione che ci sta aiutando nel progetto gratuitamente.",
-    "AUTHOR_AND_TRANSLATOR": "Design & Code: <a href=\"https:\/\/myxoske.pl\" target=\"_blank\">myxoske.pl<\/a><\/br>Versione Italiana: <a href = \"https:\/\/www.facebook.com\/groups\/staffrisenitalia\/\" target = \"_blank\">Piranha Bytes Italia<\/a>"
+    "AUTHOR_AND_TRANSLATOR": "Design & Code: <a href=\"https://myxoske.pl\" target=\"_blank\">myxoske.pl</a></br>Versione Italiana: <a href = \"https://www.facebook.com/groups/staffrisenitalia/\" target = \"_blank\">Piranha Bytes Italia</a>"
 }
