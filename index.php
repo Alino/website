@@ -239,7 +239,7 @@
         <li><span>+</span> <?php echo $lang['STORY_LIST_4']; ?></li>
         <li><span>+</span> <?php echo $lang['STORY_LIST_5']; ?></li>
       </ul>
-      <p style="text-indent: 0; margin: 30px 10px 10px 10px; line-height: 1em;"><?php echo $lang['STORY_LIST_I']; ?></p>
+      <p style="text-indent: 0; margin: 30px 10px 10px 10px; line-height: 2em;"><?php echo $lang['STORY_LIST_I']; ?></p>
     </div>
   </div>
 
