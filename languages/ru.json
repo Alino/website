@@ -40,7 +40,7 @@
     "TEAM_REC_T": "Принять участие",
     "TEAM_REC_1": "Вне зависимости от стадии проекта, мы всегда  открыты для новых людей - в настоящее время нам особенно нужны специалисты по 2D и 3D графике, сценаристы, программисты, профессиональные актеры и левел-дизайнеры, работающие в Spacer.",
     "TEAM_REC_2": "Если у Вас имеется опыт работы в любой из этих сфер деятельности, и Вы бы хотели принять участие в нашем проекте, мы будем рады приветствовать Вас в нашей команде.",
-    "TEAM_REC_3": "Если Вы заинтересованы в работе с нами, или просто есть желание написать, пожалуйста, пишите письма на этот адрес: <a href = mailto:contact@thehistoryofkhorinis.com><font color = green>contact@thehistoryofkhorinis.com<\/font><\/a>.",
+    "TEAM_REC_3": "Если Вы заинтересованы в работе с нами, или просто есть желание написать, пожалуйста, пишите письма на этот адрес: <a href = mailto:contact@thehistoryofkhorinis.com><font color = green>contact@thehistoryofkhorinis.com</font></a>.",
     "TEAM_REC_4": "ПРИМЕЧАНИЕ: пожалуйста, прилагайте ПРИМЕРЫ ВАШИХ РАБОТ, чтобы мы могли оценить Ваши навыки.",
     "DOWNLOAD_T": "Скачать",
     "DOWNLOAD": "Ссылка на загрузку мода появится здесь  в день его релиза.",
@@ -54,12 +54,12 @@
     "ADBLOCK_WARNING_T": "Выключите AdBlock",
     "ADBLOCK_WARNING_1": "На нашем сайте абсолютно нет рекламы, но некоторые из программ Adblock блокируют наши фотографии, видео и важные вещи, которые вы должны увидеть, чтобы полностью ознакомиться с Историей Хориниса.",
     "ADBLOCK_WARNING_2": "Вернуться на сайт.",
-    "ADBLOCK_WARNING_LOADING": "Если вы ожидаете более 10 секунд (на компьютере), перейдите на <a href = \/AdBlockNotice.php><font color = green>эту<\/font><\/a> страницу.",
+    "ADBLOCK_WARNING_LOADING": "Если вы ожидаете более 10 секунд (на компьютере), перейдите на <a href = /AdBlockNotice.php><font color = green>эту</font></a> страницу.",
     "SITE_LANG": "ru",
     "SITE_URL": "thehistoryofkhorinis.com",
     "SITE_EMAIL": "contact@thehistoryofkhorinis.com",
-    "NEWSLETTER_URL": "\/\/dzieje-khorinis.us15.list-manage.com\/subscribe\/post?u=814041f4e89f3eb1f68c2ab53&id=bc671c5479",
+    "NEWSLETTER_URL": "//dzieje-khorinis.us15.list-manage.com/subscribe/post?u=814041f4e89f3eb1f68c2ab53&id=bc671c5479",
     "NEWSLETTER_ID": "b_814041f4e89f3eb1f68c2ab53_bc671c5479",
     "RELEASE_DATE": "Разработка аддона находится в состоянии сведения в одно целое – переписывание скриптов в коде игры, размещение персонажей в уже завершенном мире и добавление финального варианта дубляжа находятся на одном этапе. Мы не объявляем даты релиза, потому что в данный момент не известно, займет ли окончательная разработка два месяца или восемь. Есть приблизительные сроки, но существуют также некоторые вещи, которые невозможно прогнозировать. Мы прилагаем все усилия, доводя до ума каждую деталь, кроме того, осталось 50 ролей для озвучания. Работа в аудио-студии (которая, к слову помогает нам бесплатно, так же, как и все участвующие в проекте) происходит индивидуально.",
-    "AUTHOR_AND_TRANSLATOR": "Design & Code: <a href=https:\/\/myxoske.pl target=_blank>myxoske.pl<\/a><\/br>Pусский вариант: Andrej Andreew & Szymon Żak"
+    "AUTHOR_AND_TRANSLATOR": "Design & Code: <a href=https://myxoske.pl target=_blank>myxoske.pl</a></br>Pусский вариант: Andrej Andreew & Szymon Żak"
 }
