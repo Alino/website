@@ -72,7 +72,7 @@
     <div class="lang-bar">
       <a href="http://dzieje-khorinis.pl" onClick="ga('send', 'event', 'lang', 'pl');"><img src="img/lang/pl.jpg"></a>
       <a href="http://thehistoryofkhorinis.com/?lang=en" onClick="ga('send', 'event', 'lang', 'en', '<?php echo $lang['SITE_LANG']; ?>');"><img src="img/lang/en.jpg"></a>
-	  <a href="http://thehistoryofkhorinis.com/?lang=ge" onClick="ga('send', 'event', 'lang', 'ge', '<?php echo $lang['SITE_LANG']; ?>');"><img src="img/lang/ge.jpg"></a>     
+	  <a href="http://thehistoryofkhorinis.com/?lang=de" onClick="ga('send', 'event', 'lang', 'de', '<?php echo $lang['SITE_LANG']; ?>');"><img src="img/lang/ge.jpg"></a>     
 	  <a href="http://thehistoryofkhorinis.com/?lang=sk" onClick="ga('send', 'event', 'lang', 'sk', '<?php echo $lang['SITE_LANG']; ?>');"><img src="img/lang/sk.jpg"></a>     
 	  </br>
       <a href="http://thehistoryofkhorinis.com/?lang=ru" onClick="ga('send', 'event', 'lang', 'ru', '<?php echo $lang['SITE_LANG']; ?>');"><img src="img/lang/ru.jpg"></a>
