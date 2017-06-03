@@ -16,6 +16,7 @@
   <meta property="og:image" content="img/company_og_<?php echo $lang['SITE_LANG'];?>.png" />
   
   <link href="https://fonts.googleapis.com/css?family=Metamorphous" rel="stylesheet"> 
+  
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <link rel="stylesheet" href="css/style.css" />
@@ -44,7 +45,7 @@
 	
 <body>
   <?php include_once("google_analytics.php") ?>
-	
+
   <!-- <div class="se-pre-con"> <div class="loading"><i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i> </br> </br> <?php //echo $lang['ADBLOCK_WARNING_LOADING']; ?> </div> </div> -->
   
   <a id="top" class="anchor magnetic"></a>
@@ -61,12 +62,6 @@
 	  
       <a href="https://www.youtube.com/c/dziejekhorinismod" target="_blank" onClick="ga('send', 'event', 'socialmedia', 'youtube', '<?php echo $lang['SITE_LANG']; ?>');"><img src="img/footer/youtube.png"></a>
       <a href="http://www.moddb.com/mods/the-history-of-khorinis" target="_blank" onClick="ga('send', 'event', 'socialmedia', 'moddb', '<?php echo $lang['SITE_LANG']; ?>');"><img src="img/footer/moddb.png"></a>
-	  
-	    <?php 
-		if ($lang['SITE_LANG'] != 'ru') {
-			?> <a href="https://discordapp.com/invite/ySDMRhM" target="_blank" onClick="ga('send', 'event', 'socialmedia', 'discord', '<?php echo $lang['SITE_LANG']; ?>');"><img src="img/footer/discord.png"></a><?php 
-		}		  
-	   ?>	 
     </div>
 	
     <div class="lang-bar">
@@ -83,6 +78,8 @@
     <div class="top-container scrollme">	 
       <img src="img/company_<?php echo $lang['SITE_LANG']; ?>.png" id="logo"> 
       <p><?php echo $lang['INFO']; ?></p>	  
+	  
+	  <!-- <a href="#intro" class="arrows white"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a> -->
     </div>    
   </div>
          
@@ -346,9 +343,7 @@
 	  ?>
 	  
       <a href="https://www.youtube.com/c/dziejekhorinismod" target="_blank" onClick="ga('send', 'event', 'socialmedia', 'youtube', '<?php echo $lang['SITE_LANG']; ?>');"><img src="img/footer/youtube.png"></a>
-      <a href="http://www.moddb.com/mods/the-history-of-khorinis" target="_blank" onClick="ga('send', 'event', 'socialmedia', 'moddb', '<?php echo $lang['SITE_LANG']; ?>');"><img src="img/footer/moddb.png"></a>
-	  <a href="https://discordapp.com/invite/ySDMRhM" target="_blank" onClick="ga('send', 'event', 'socialmedia', 'discord', '<?php echo $lang['SITE_LANG']; ?>');"><img src="img/footer/discord.png"></a>
-	   	  	  
+      <a href="http://www.moddb.com/mods/the-history-of-khorinis" target="_blank" onClick="ga('send', 'event', 'socialmedia', 'moddb', '<?php echo $lang['SITE_LANG']; ?>');"><img src="img/footer/moddb.png"></a>  	  
     </div>
 	
 	<!-- <a href = "https://www.dropbox.com/sh/ob5ax4k1a9ygg5t/AAAanAujZDHjmH6QwyOiSh80a?dl=0" onClick="ga('send', 'event', 'other', 'presspack', '<?php echo $lang['SITE_LANG']; ?>');" target="_blank"> <font color = "green"> <?php echo $lang['PRESS_PACK']; ?> </font> </a> -->

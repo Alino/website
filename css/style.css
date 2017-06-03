@@ -1018,3 +1018,23 @@ width: 450px; margin: 0 auto; display: block; height: 170px;
     text-decoration: none;
     cursor: pointer;
 }
+
+.arrows {
+	display: table;
+	text-align: center;
+	font-size: 4em;
+	animation: MoveUpDown 1s linear infinite;
+	bottom: 0;
+	position: absolute;
+	width: 70%;
+	color: white; 
+	transition: all .2s ease-in;
+	margin: 1% 10;
+	z-index: 20
+}
+	
+@keyframes MoveUpDown {
+	0% { bottom:0 }
+	50% { bottom:20px }
+	100% { bottom:0 }
+}
