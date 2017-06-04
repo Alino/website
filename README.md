@@ -11,3 +11,4 @@ Improvement & maintenance: [Szymon Żak](http://szymonzak.pl)
 * Italian by **[Alessandro "Melvasul" Timpone](https://www.facebook.com/alessandro.timpone)** & **[Enrico Blasoni](https://www.facebook.com/enrico.blasoni)** [(Piranha Bytes Italia)](https://www.facebook.com/groups/staffrisenitalia)
 * Czech by **Filip Richter**
 * Slovak by **Marek33**
+* Serbian by **[Darchy BlackSun](mailto:ddarchy@yahoo.com)**
