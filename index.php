@@ -73,13 +73,14 @@
       <a href="http://thehistoryofkhorinis.com/?lang=ru" onClick="ga('send', 'event', 'lang', 'ru', '<?php echo $lang['SITE_LANG']; ?>');"><img src="img/lang/ru.jpg"></a>
       <a href="http://thehistoryofkhorinis.com/?lang=cs" onClick="ga('send', 'event', 'lang', 'cs', '<?php echo $lang['SITE_LANG']; ?>');"><img src="img/lang/cs.jpg"></a>
 	  <a href="http://thehistoryofkhorinis.com/?lang=it" onClick="ga('send', 'event', 'lang', 'it', '<?php echo $lang['SITE_LANG']; ?>');"><img src="img/lang/it.jpg"></a>
+	  <a href="http://thehistoryofkhorinis.com/?lang=sr" onClick="ga('send', 'event', 'lang', 'sr', '<?php echo $lang['SITE_LANG']; ?>');"><img src="img/lang/sr.jpg"></a>
     </div>
 	
     <div class="top-container scrollme">	 
       <img src="img/company_<?php echo $lang['SITE_LANG']; ?>.png" id="logo"> 
       <p><?php echo $lang['INFO']; ?></p>	  
 	  
-	  <!-- <a href="#intro" class="arrows white"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a> -->
+	  <a href="#intro" class="arrows white"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
     </div>    
   </div>
          
