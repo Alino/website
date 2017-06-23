@@ -68,12 +68,17 @@
       <a href="http://dzieje-khorinis.pl" onClick="ga('send', 'event', 'lang', 'pl');"><img src="img/lang/pl.jpg"></a>
       <a href="http://thehistoryofkhorinis.com/?lang=en" onClick="ga('send', 'event', 'lang', 'en', '<?php echo $lang['SITE_LANG']; ?>');"><img src="img/lang/en.jpg"></a>
 	  <a href="http://thehistoryofkhorinis.com/?lang=de" onClick="ga('send', 'event', 'lang', 'de', '<?php echo $lang['SITE_LANG']; ?>');"><img src="img/lang/ge.jpg"></a>     
-	  <a href="http://thehistoryofkhorinis.com/?lang=sk" onClick="ga('send', 'event', 'lang', 'sk', '<?php echo $lang['SITE_LANG']; ?>');"><img src="img/lang/sk.jpg"></a>     
-	  </br>
-      <a href="http://thehistoryofkhorinis.com/?lang=ru" onClick="ga('send', 'event', 'lang', 'ru', '<?php echo $lang['SITE_LANG']; ?>');"><img src="img/lang/ru.jpg"></a>
-      <a href="http://thehistoryofkhorinis.com/?lang=cs" onClick="ga('send', 'event', 'lang', 'cs', '<?php echo $lang['SITE_LANG']; ?>');"><img src="img/lang/cs.jpg"></a>
+	  <a href="http://thehistoryofkhorinis.com/?lang=ru" onClick="ga('send', 'event', 'lang', 'ru', '<?php echo $lang['SITE_LANG']; ?>');"><img src="img/lang/ru.jpg"></a>
+	  <a href="http://thehistoryofkhorinis.com/?lang=sp" onClick="ga('send', 'event', 'lang', 'sp', '<?php echo $lang['SITE_LANG']; ?>');"><img src="img/lang/sp.jpg"></a>
+	  
+	  </br>	  
+	  <a href="http://thehistoryofkhorinis.com/?lang=cs" onClick="ga('send', 'event', 'lang', 'cs', '<?php echo $lang['SITE_LANG']; ?>');"><img src="img/lang/cs.jpg"></a>  	  
+	  <a href="http://thehistoryofkhorinis.com/?lang=sk" onClick="ga('send', 'event', 'lang', 'sk', '<?php echo $lang['SITE_LANG']; ?>');"><img src="img/lang/sk.jpg"></a>           
 	  <a href="http://thehistoryofkhorinis.com/?lang=it" onClick="ga('send', 'event', 'lang', 'it', '<?php echo $lang['SITE_LANG']; ?>');"><img src="img/lang/it.jpg"></a>
 	  <a href="http://thehistoryofkhorinis.com/?lang=sr" onClick="ga('send', 'event', 'lang', 'sr', '<?php echo $lang['SITE_LANG']; ?>');"><img src="img/lang/sr.jpg"></a>
+	  <a href="http://thehistoryofkhorinis.com/?lang=ro" onClick="ga('send', 'event', 'lang', 'ro', '<?php echo $lang['SITE_LANG']; ?>');"><img src="img/lang/ro.jpg"></a>
+	  
+	  </br>
     </div>
 	
     <div class="top-container scrollme">	 
@@ -151,13 +156,7 @@
 	
     <div>
       <h1><i class="fa fa-bookmark" aria-hidden="true"></i> <?php echo $lang['FEATURES_T'] ?></h1>
-      <img src="img/cat.png" align="right" class="mt60 mb20 scrollme animateme"
-				data-when="span"
-				data-from="0.5"
-				data-to="0"
-				data-crop="false"
-				data-opacity="0"
-				data-scale="1.5">
+      <img src="img/cat.png" align="right">
       <ul>
         <li class="dkali"><b><span>+</span> <?php echo $lang['FEATURES_1'] ?></b></li>      
         <li><span>+</span> <?php echo $lang['FEATURES_2'] ?></li>

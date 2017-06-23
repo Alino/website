@@ -12,3 +12,5 @@ Improvement & maintenance: [Szymon Żak](http://szymonzak.pl)
 * Czech by **Filip Richter**
 * Slovak by **Marek33**
 * Serbian by **[Darchy BlackSun](mailto:ddarchy@yahoo.com)**
+* Romanian by **[Andrei Florin](mailto:Andreyandrey452@gmail.com)** & **[Iosif Alexandru](mailto:iosifalexandru46@yahoo.com)**
+* Spanish by **[Carlos Fdez](mailto:car_ff@hotmail.com)**
