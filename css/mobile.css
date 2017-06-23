@@ -1,6 +1,15 @@
 @media screen and (max-width: 400px)
 {
 
+
+.social-bar img
+{
+	display: block;
+	width: 35px;
+	height: 35px;
+	margin: 0 3px 10px 0;
+}
+
 .container .list,
 .list2
 {
