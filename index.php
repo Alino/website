@@ -285,7 +285,7 @@
   <a id="gallery" class="anchor"></a>
   
   <div>
-	<iframe class="gallery" src="https://www.youtube.com/embed/EWjxMZIeLjY" frameborder="0" allowfullscreen onClick="ga('send', 'event', 'insite', 'video_1', '<?php echo $lang['SITE_LANG']; ?>');"></iframe>
+	<iframe class="gallery" src="https://www.youtube.com/embed/6G3_fsFAiSM" frameborder="0" allowfullscreen onClick="ga('send', 'event', 'insite', 'video_1', '<?php echo $lang['SITE_LANG']; ?>');"></iframe>
 	<iframe class="gallery" src="https://www.youtube.com/embed/vnoVmUTamXM" frameborder="0" allowfullscreen onClick="ga('send', 'event', 'insite', 'video_2', '<?php echo $lang['SITE_LANG']; ?>');"></iframe>	
     <iframe class="gallery" src="https://www.youtube.com/embed/SS_RRuNCe6Y" frameborder="0" allowfullscreen onClick="ga('send', 'event', 'insite', 'video_3', '<?php echo $lang['SITE_LANG']; ?>');"></iframe>
     <iframe class="gallery" src="https://www.youtube.com/embed/O9-r6dbUpfQ" frameborder="0" allowfullscreen onClick="ga('send', 'event', 'insite', 'video_4', '<?php echo $lang['SITE_LANG']; ?>');"></iframe>
@@ -346,8 +346,12 @@
       <a href="http://www.moddb.com/mods/the-history-of-khorinis" target="_blank" onClick="ga('send', 'event', 'socialmedia', 'moddb', '<?php echo $lang['SITE_LANG']; ?>');"><img src="img/footer/moddb.png"></a>  	  
     </div>
 	
-	<!-- <a href = "https://www.dropbox.com/sh/ob5ax4k1a9ygg5t/AAAanAujZDHjmH6QwyOiSh80a?dl=0" onClick="ga('send', 'event', 'other', 'presspack', '<?php echo $lang['SITE_LANG']; ?>');" target="_blank"> <font color = "green"> <?php echo $lang['PRESS_PACK']; ?> </font> </a> -->
-	
+   <?php 
+	if ($lang['SITE_LANG'] == 'pl') {
+		?><a href = "https://www.dropbox.com/sh/3nhcydxoxuiim6m/AAAvwYA1claTr5zQ1ZZva6Wia?dl=0" onClick="ga('send', 'event', 'other', 'presspack', '<?php echo $lang['SITE_LANG']; ?>');" target="_blank"> <font color = "green"> <?php echo $lang['PRESS_PACK']; ?> </font> </a><?php 
+	}		  
+   ?>
+	   
 	</br> </br>
 	
     <img src="img/logo.png" class="logo">
