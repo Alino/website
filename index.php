@@ -284,7 +284,7 @@
 
   <a id="gallery" class="anchor"></a>
   
-  <div>
+  <div id="gallery-content">
 	<iframe class="gallery" src="https://www.youtube.com/embed/6G3_fsFAiSM" frameborder="0" allowfullscreen onClick="ga('send', 'event', 'insite', 'video_1', '<?php echo $lang['SITE_LANG']; ?>');"></iframe>
 	<iframe class="gallery" src="https://www.youtube.com/embed/vnoVmUTamXM" frameborder="0" allowfullscreen onClick="ga('send', 'event', 'insite', 'video_2', '<?php echo $lang['SITE_LANG']; ?>');"></iframe>	
     <iframe class="gallery" src="https://www.youtube.com/embed/SS_RRuNCe6Y" frameborder="0" allowfullscreen onClick="ga('send', 'event', 'insite', 'video_3', '<?php echo $lang['SITE_LANG']; ?>');"></iframe>
