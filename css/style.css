@@ -261,6 +261,12 @@ hr.style2 {
   background-repeat: no-repeat;
   background-position: 85% 90px;
 }
+#gallery-content
+{
+  padding-left: 18px;
+  padding-right: 18px;
+  background:#111;
+}
 .gallery
 {
   width: 25%;
